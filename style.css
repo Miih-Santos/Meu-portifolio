@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=RocknRoll+One&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Resetando o CSS padrão do Navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 700px;
+    position: fixed;
+    padding: 10px;
+    margin-left: 30px;
+    transition: .2s;
+    color: white;
+}
+
+.menu h1 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header a {
+    color: #282727;
+    padding: 10px;
+    margin: 10px;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+}
+
+header a:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.conteudo-principal {
+    background: url(assets/Itens\ para\ o\ portifólio.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+
+.carreira {
+    background-color: black;
+    padding: 300px 100px 10px 100px;
+    color: white;
+}
+
+.carreira p {
+    font-size: 40px;
+    font-family: "Rokkitt", serif;
+}
+
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+    border-bottom: solid 1px whitesmoke;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sobre-mim h1 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+}
+
+.sobre-mim p {
+    font-family: "Rokkitt", serif;
+    font-size: 15pt;
+    width: 70%;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.contato {
+    margin: 90px;
+    border-bottom: solid 1px whitesmoke;
+    border-top: solid 1px whitesmoke;
+}
+
+.contato h1 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+    margin-top: 70px ;
+}
+
+.contato p{
+    font-family: "Rokkitt", serif;
+    font-size: 15pt;
+    width: 70%;
+    text-align: justify;
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
+span {
+    color: #fff;
+}
+
+.contato span:hover {
+    text-decoration: line-through;
+}
+
+.meus-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    
+}
+
+.parte-a h1 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+}
+
+.parte-a p {
+    font-family: "Rokkitt", serif;
+    font-size: 15pt;
+    width: 70%;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.parte-b {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;    
+} 
+
+.parte-b a{
+    color: #fff; 
+} 
+
+.parte-b a :hover{
+    background-color: #ffffffcd;
+    color: #000000;
+    border-radius: 20px;
+    transition: all .2s;
+} 
+
+.rodape {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10pt; 
+    text-align: center;
+    margin-top: -50px;
+}
+
