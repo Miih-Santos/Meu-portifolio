@@ -31,13 +31,20 @@ header {
     left: 0;
     width: 100%; /* Para ocupar toda a largura */
     z-index: 1000;
+
+    border-bottom: 1px solid #fff;
 }
 
-h1 {
+h1, h2 {
     font-family: "Rock Salt", cursive;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
+}
+
+p {
+    font-family: "Rokkitt", serif;
+    font-size: 18pt;
 }
 
 .navegacao {
@@ -89,7 +96,7 @@ h1 {
 }
 
 .conteudo-principal {
-    background: url(assets/kiki-dark-mode.png) no-repeat center;
+    background: url(assets/imgs/kiki-dark-mode.png) no-repeat center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -98,13 +105,183 @@ h1 {
 
 .carreira {
     padding: 300px 100px;
-    color: white;
+}
+
+.carreira p  {
     font-size: 40px;
-    font-family: "Rokkitt", serif;
     text-shadow: 10px 10px 10px black;
 }
 
+/* Sessão sobre mim */
 
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+    border-bottom: solid 1px whitesmoke;
+}
+
+.sobre-mim img {
+    width: 500px;
+    margin: 50px 20px;
+}
+
+.conteudo-sobre-mim {
+    margin-left: 30px;
+}
+
+
+.sobre-mim h2 {
+    font-size: 40pt;
+}
+
+.sobre-mim p {
+    width: 80%;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+/*Meus projetos*/
+
+.projetos-destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.projetos-destaque h2 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    gap: 50px;
+    border-bottom: 1px solid #fff ;
+}
+
+.cards div {
+    display: flex;
+    gap: 90px;
+}
+
+article {
+    background-color: #272648;
+    height: 444px;
+    width: 338px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+article img {
+    margin-top: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+article p {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15pt;
+}
+
+article button {
+    background-color: #151827;
+    border: none;
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: "Rokkitt", serif;
+    font-size: 13pt;
+    transition: .2s;
+}
+
+article button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px #0D2027;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    border-bottom: 1px solid #fff;
+}
+
+.contato img {
+    width: 500px;
+    margin: 30px;
+}
+
+.contato h2 {
+    font-size: 30pt;
+}
+
+.contato p {
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.contato button {
+    background-color: #272648;
+    border: none;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: "Rokkitt", serif;
+    font-size: 13pt;
+    transition: .2s;
+}
+
+.contato button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px #151827;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.logos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 18px 0;
+    font-size: 24px;
+}
+
+.logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background .2s;
+    color: #fff;
+}
+  
+.logos a:hover {
+    background-color: #910000;
+}
   /*
 
   .ligth #swich button {
@@ -116,111 +293,7 @@ h1 {
 /*
 
 
-.sobre-mim {
-    display: flex;
-    justify-content: center;
-    margin: 90px;
-    border-bottom: solid 1px whitesmoke;
-}
-
-.conteudo {
-    display: flex;
-    flex-direction: column;
-}
 
 
-.sobre-mim h1 {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40pt;
-}
 
-.sobre-mim p {
-    font-family: "Rokkitt", serif;
-    font-size: 15pt;
-    width: 70%;
-    text-align: justify;
-    margin-left: 100px;
-}
-
-.contato {
-    margin: 90px;
-    border-bottom: solid 1px whitesmoke;
-    border-top: solid 1px whitesmoke;
-}
-
-.contato h1 {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40pt;
-    margin-top: 70px ;
-}
-
-.contato p{
-    font-family: "Rokkitt", serif;
-    font-size: 15pt;
-    width: 70%;
-    text-align: justify;
-    margin-left: 100px;
-    padding-bottom: 20px;
-}
-
-span {
-    color: #fff;
-}
-
-.contato span:hover {
-    text-decoration: line-through;
-}
-
-.meus-projetos {
-    display: flex;
-    justify-content: center;
-    gap: 300px;
-    
-}
-
-.parte-a h1 {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40pt;
-}
-
-.parte-a p {
-    font-family: "Rokkitt", serif;
-    font-size: 15pt;
-    width: 70%;
-    text-align: justify;
-    margin-left: 100px;
-}
-
-.parte-b {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20pt;    
-} 
-
-.parte-b a{
-    color: #fff; 
-} 
-
-.parte-b a :hover{
-    background-color: #ffffffcd;
-    color: #000000;
-    border-radius: 20px;
-    transition: all .2s;
-} 
-
-.rodape {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10pt; 
-    text-align: center;
-    margin-top: -50px;
-}
 
