@@ -8,11 +8,65 @@
     text-decoration: none;
 }
 
+/* Criando variaveis para o ligth mode e o dark mode*/
+
+:root {
+    --text-color: #fff;
+    --background-color: #0D2027;
+    --border-color: #fff;
+    --shadow-color: #000;
+    --background-image: url(assets/imgs/kiki-dark-mode.png);
+    --buton-switch-color: rgb(233, 233, 233);
+    --buton-switch-image:  url(assets/moon.svg);
+    --card-color: #272648;
+    --card-buton-color: #151827;
+
+}
+
+.ligth {
+    --text-color: #fff;
+    --background-color: #557D63;
+    --background-image: url(assets/imgs/kiki-ligth-mode.png);
+    --buton-switch-image:  url(assets/sun.svg);
+    --card-color: #446d4c;
+    --card-buton-color: #0C4332;
+}
+
+/**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+#preloader {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #0D2027;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.loader {
+    border: 8px solid #fff;
+    border-top: 8px solid #557D63;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
 /* Padronização do body */
 
 body {
-    background-color: #0D2027;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* header */
@@ -23,16 +77,16 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px;
     padding: 20px;
-    text-shadow: 5px 2px 10px black;
+    text-shadow: 5px 2px 10px var(--shadow-color);
 
     top: 0;
     left: 0;
-    width: 100%; /* Para ocupar toda a largura */
+    width: 100%;
     z-index: 1000;
 
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(4px);
 }
 
 h1, h2 {
@@ -58,10 +112,15 @@ p {
     padding: 10px;
     margin: 10px;
     font-size: 13pt;
-    color: #fff;
+    color: var(--text-color);
     font-family: "RocknRoll One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.menu a:hover{
+    border-bottom: 1px solid #fff;
+    transition: .2s;
 }
 
 #swich {
@@ -75,7 +134,7 @@ p {
     width: 32px;
     border: 0;
     border-radius: 50%;
-    background: rgb(233, 233, 233) url(assets/moon.svg) no-repeat center;
+    background: var(--buton-switch-color) var(--buton-switch-image) no-repeat center;
     background-size: 70%;
     position: absolute;
     top: 50%;
@@ -84,19 +143,23 @@ p {
     transform: translateY(-50%);
 }
 
+.ligth #swich button {
+  left: initial;
+  right: 0;
+}
+
 #swich span {
     display: block;
     height: 24px;
     width: 64px;
     background-color: #fff;
-    border: 1px solid rgb(0, 0, 0);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border-radius: 9999px;
 }
 
 .conteudo-principal {
-    background: url(assets/imgs/kiki-dark-mode.png) no-repeat center;
+    background: var(--background-image) no-repeat center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -109,7 +172,7 @@ p {
 
 .carreira p  {
     font-size: 40px;
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 10px 10px 10px var(--shadow-color);
 }
 
 /* Sessão sobre mim */
@@ -174,7 +237,7 @@ p {
 }
 
 article {
-    background-color: #272648;
+    background-color: var(--card-color);
     height: 444px;
     width: 338px;
     border-radius: 20px;
@@ -198,7 +261,7 @@ article p {
 }
 
 article button {
-    background-color: #151827;
+    background-color: var(--card-buton-color);
     border: none;
     height: 60px;
     width: 200px;
@@ -238,13 +301,13 @@ article button:hover {
 }
 
 .contato button {
-    background-color: #272648;
+    background-color: var(--card-buton-color);
     border: none;
     margin-top: 20px;
     height: 50px;
     width: 150px;
     border-radius: 50px;
-    color: #fff;
+    color: var(--text-color);
     font-family: "Rokkitt", serif;
     font-size: 13pt;
     transition: .2s;

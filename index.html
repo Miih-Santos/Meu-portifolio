@@ -2,7 +2,6 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Conheça meu portifólio!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Bem-vindo ao meu portifólio digital, onde você pode me conhecer melhor e conhecer minhas habilidades profissionais.">
         <meta name="author" content="Koala">
@@ -12,6 +11,9 @@
     </head>
 
     <body>
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
 
         <header id="cabecalho">
 
@@ -21,13 +23,17 @@
 
                 <nav class="menu">
                 
-                    <a href="">Sobre mim</a>
+                    <a href="#sobre-mim">Sobre mim</a>
 
-                    <a href="">Projetos</a>
+                    <a href="#projetos-destaque">Projetos</a>
 
-                    <a href="">Contato</a>
+                    <a href="#contato">Contato</a>
                     
                 </nav>
+
+                <div id="language" onclick="toggleLang()">
+                    <button title="Clique para mudar o idioma">PT</button>
+                </div>
 
                 <div id="swich" onclick="toggleMode()">
                     <button></button>
@@ -52,7 +58,7 @@
 
             </section>
 
-            <section class="sobre-mim">
+            <section id="sobre-mim" class="sobre-mim">
 
                 <img src="assets/imgs/black-cat.jpg" alt="Gato preto do anime do estudio ghibli o serviço de entregas da kiki">
                 
@@ -66,7 +72,7 @@
 
             </section>
 
-            <section class="projetos-destaque">
+            <section id="projetos-destaque" class="projetos-destaque">
 
                 <h2>Projetos em destaque</h2>
                 <p>Confira alguns projetos em destaque feitos por mim.</p>
@@ -127,7 +133,7 @@
 
             </section>
 
-            <section class="contato">
+            <section id="contato" class="contato">
                 <img src="assets/imgs/kiki-and-boy.png" alt="">
                 <div class="conteudo-contato">
                     <h2>Contato</h2>
@@ -155,6 +161,7 @@
 
         <!--Scripts-->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="assets/js/index.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
